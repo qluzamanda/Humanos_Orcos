@@ -22,6 +22,7 @@ Con lo anterios se evidencias los siguientes principios de diseño:
 	-Kiss -> Ene general el codigo es simple  facil de explicar.
 
 Patrones de Diseño Usados:
+
 	Patron Creacional -> 
 	Se usa el "Abstract Factory: " ya que hay una interfaz para crear cada  familia de productos.
 	tenemos las interfaz  FabricaHumanos()  para  todos los productos de los humanos.

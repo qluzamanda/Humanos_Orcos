@@ -1,39 +1,35 @@
+Integrantes
+Luz Amanda Quilindo Celis
+Sebastian Vega
+Diego Madrid
+
+
 # Humanos_Orcos
 Ejemplo de Objetos
 Ejemplo Realizado para revizar los conceptos del Paradigma de Orientacion a objetos.
-En el ejemplo se agregan las monturas y los cuerpos tanto a los humanos como a los Orcos.
+y enteder la implementacion del Patron Bridge
 
 Con lo anterios se evidencias los siguientes principios de diseño:
 
-	-Single Responsability: se evidencia ya que cada objeto tiene una sola responsabilidad
-		ArmaOrcos
-		ArmaHumanos
-		EscudoOrco
-		EscudoHumano... etc
+	-Single Responsability: Cada objeto tiene una responsabilidad unica.
+		
 
 	-Open/close: Vemos qeu esta abierta a la extension  pudimos agregar mas  productos sin 
 		     afectar el codigo ya que se uso  el mecanismo de extension.
 
-	-Interface segragation-<  tenemos clases especializada y pequeñas
+	
 
 	-Dependency inversión ->Los modulos de  estan completamente desaclopadas se pueden agregar
 			        o quitar elementos  si afectar otros modulos
+				
+La manera en que implementamos el patron Bridge fue como se muestra en la siguiente figura: 
+				
+![image](https://user-images.githubusercontent.com/80139895/115155372-4ffb7800-a045-11eb-9ee7-a87f21b996aa.png)
 
-	-Kiss -> Ene general el codigo es simple  facil de explicar.
-
-Patrones de Diseño Usados:
-
-	Patron Creacional -> 
-	Se usa el "Abstract Factory: " ya que hay una interfaz para crear cada  familia de productos.
-	tenemos las interfaz  FabricaHumanos()  para  todos los productos de los humanos.
-                    y  FabricaOrcos()  para todos los productos de los Orcos.
+Por medio de la abstraccion " Productos" se puede exteder a mas productos si necesidad  de modificar mucho codigo.
 
 
-	PAtron Estructrua -> 
-	Se usa  el patron  "Facade"  ya  que tenemos una sola interfaz  producto  para acceder a  
-	cada uno de los diferetes productos  ya sea de Orcos o de humano
 
 
-	Patron de comportamiento ->
-	se usa el patron de "template method"  por qeuu se usa un esquelo para de creacion pero realmente 
-	cada subclase es la que define que es lo qeu se debe realziar.
+
+.

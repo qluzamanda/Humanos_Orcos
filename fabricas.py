@@ -1,34 +1,21 @@
 from productos import *
 
 class Fabrica:
-    def crear_arma(self):
+    def crear_producto(self):
         pass
 
-    def crear_escudo(self):
-        pass
+
 
 class FabricaHumanos(Fabrica):
-    def crear_arma(self):
-        return ArmaHumanos()
+    def crear_producto(self,producto):
+        producto.getProductoHumano()
+        return producto
 
-    def crear_escudo(self):
-        return EscudoHumanos()
-
-    def crear_montura(self):
-        return MonturaHumanos()
-
-    def crear_cuerpo(self):
-        return CuerpoHumanos()
+   
 
 class FabricaOrcos(Fabrica):
-    def crear_arma(self):
-        return ArmaOrcos()
+    def crear_producto(self,producto):
+        producto.getProductoOrco()      
+        return producto
 
-    def crear_escudo(self):
-        return EscudoOrcos()
     
-    def crear_montura(self):
-        return MonturaOrcos()
-
-    def crear_cuerpo(self):
-        return CuerpoOrcos()

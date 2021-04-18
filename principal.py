@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from fabricas import *
 from random import choice
+from productos import *
 
 app = Flask(__name__)
 
@@ -9,10 +10,10 @@ app = Flask(__name__)
 def principal():
     fabricas = [FabricaHumanos(), FabricaOrcos()]
     fabrica = choice(fabricas)
-    arma = fabrica.crear_arma()
-    escudo = fabrica.crear_escudo()
-    montura= fabrica.crear_montura()
-    cuerpo= fabrica.crear_cuerpo()
+    arma= fabrica.crear_producto(Arma())
+    escudo = fabrica.crear_producto(Escudo())
+    montura= fabrica.crear_producto(Montura())
+    cuerpo= fabrica.crear_producto(Cuerpo())
 
     productos = []
 
